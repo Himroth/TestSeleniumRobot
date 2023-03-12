@@ -13,10 +13,10 @@ ${URL}          https://osagilistas.com/login/
 ${Browser}      chrome
 
 #Elements
-${input_name}           id:forminator-field-text-1_640e08031f2ca
-${input_password}       id:forminator-field-password-1_640e08031f2ca
-${button_login}         //*[@id="forminator-module-17221"]/div[5]/div/div/button
-${login_error_message}   //*[@id="forminator-module-17221"]/div[1]/label
+${input_name}               id:forminator-field-text-1_640e08031f2ca
+${input_password}           id:forminator-field-password-1_640e08031f2ca
+${button_login}             //*[@id="forminator-module-17221"]/div[5]/div/div/button
+${login_error_message}      //*[@id="forminator-module-17221"]/div[1]/label
 
 *** Keywords ***
 the user access the os agilistas website
@@ -32,7 +32,8 @@ the user clicks on button login
     Click Element       ${button_login}
 
 the user must see the error message
-    Wait Until Element Contains     ${login_error_message}       ${login_error_message_front}
+    Wait Until Element Is Visible       ${login_error_message}
+    Wait Until Element Contains         ${login_error_message}       ${login_error_message_front}
 
 
 *** Test Cases ***
