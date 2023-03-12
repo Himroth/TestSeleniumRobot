@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230312 14:49:07.701" rpa="false" schemaversion="3">
+<suite id="s1" name="Agilistas" source="E:\repositório\dtiTestSeleniumRobot\UI\agilistas.robot">
+<test id="s1-t1" name="Scenario 1: Validates if is showed the correctly message when the user tries to login with wrong user and password" line="39">
+<kw name="Given the user access the os agilistas website">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230312 14:49:07.850" level="INFO">Opening browser 'chrome' to base url 'https://osagilistas.com/login/'.</msg>
+<status status="PASS" starttime="20230312 14:49:07.850" endtime="20230312 14:49:13.904"/>
+</kw>
+<status status="PASS" starttime="20230312 14:49:07.849" endtime="20230312 14:49:13.905"/>
+</kw>
+<kw name="And the user fill the field name with a wrong name">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_name}</arg>
+<arg>${wrong_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230312 14:49:13.906" level="INFO">Typing text 'test' into text field 'id:forminator-field-text-1_640e08031f2ca'.</msg>
+<status status="PASS" starttime="20230312 14:49:13.905" endtime="20230312 14:49:13.956"/>
+</kw>
+<status status="PASS" starttime="20230312 14:49:13.905" endtime="20230312 14:49:13.956"/>
+</kw>
+<kw name="And fill the field password with a wrong password">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>${wrong_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230312 14:49:13.957" level="INFO">Typing text 'test' into text field 'id:forminator-field-password-1_640e08031f2ca'.</msg>
+<status status="PASS" starttime="20230312 14:49:13.956" endtime="20230312 14:49:14.009"/>
+</kw>
+<status status="PASS" starttime="20230312 14:49:13.956" endtime="20230312 14:49:14.009"/>
+</kw>
+<kw name="When the user clicks on button login">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230312 14:49:14.010" level="INFO">Clicking element '//*[@id="forminator-module-17221"]/div[5]/div/div/button'.</msg>
+<status status="PASS" starttime="20230312 14:49:14.009" endtime="20230312 14:49:19.313"/>
+</kw>
+<status status="PASS" starttime="20230312 14:49:14.009" endtime="20230312 14:49:19.313"/>
+</kw>
+<kw name="Then the user must see the error message">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>${login_error_message}</arg>
+<arg>${login_error_message_front}</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20230312 14:49:19.314" endtime="20230312 14:49:19.338"/>
+</kw>
+<status status="PASS" starttime="20230312 14:49:19.314" endtime="20230312 14:49:19.338"/>
+</kw>
+<status status="PASS" starttime="20230312 14:49:07.849" endtime="20230312 14:49:19.338"/>
+</test>
+<status status="PASS" starttime="20230312 14:49:07.702" endtime="20230312 14:49:19.339"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Agilistas">Agilistas</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
