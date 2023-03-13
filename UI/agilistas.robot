@@ -194,39 +194,39 @@ Scenario 4: Validates if the button cadastre se opens the register page
       Then the user must see the warning message abou the field full name
 
 Scenario 6: Validates if the field email is mandatory on register
-        Given the user access the os agilistas website register
-        And the user click on the field email
-        When the user press tab key on the field email
-        Then the user must see the warning message about the email
+    Given the user access the os agilistas website register
+    And the user click on the field email
+    When the user press tab key on the field email
+    Then the user must see the warning message about the email
 
 Scenario 7: Validates if the field senha is mandatory on register
-        Given the user access the os agilistas website register
-        And the user click on the field senha
-        When the user press tab key on the field senha
-        Then the user must see the warning message about the field senha
+    Given the user access the os agilistas website register
+    And the user click on the field senha
+    When the user press tab key on the field senha
+    Then the user must see the warning message about the field senha
 
 Scenario 8: Validates if the field empresa is mandatory on register
-        Given the user access the os agilistas website register
-        And the user click on the field empresa
-        When the user press tab key on the field empresa
-        Then the user must see the warning message about the field empresa
+    Given the user access the os agilistas website register
+    And the user click on the field empresa
+    When the user press tab key on the field empresa
+    Then the user must see the warning message about the field empresa
 
 Scenario 9: Validates if the field cargo is mandatory on register
-        Given the user access the os agilistas website register
-        And the user click on the field cargo
-        When the user press tab key on the field cargo
-        Then the user must see the warning message about the field cargo
+    Given the user access the os agilistas website register
+    And the user click on the field cargo
+    When the user press tab key on the field cargo
+    Then the user must see the warning message about the field cargo
 
 Scenario 10: Create new register
-        Given the user access the os agilistas website register
-        And the user fill the field full name
-        And the user fill the field email
-        And the user fill the field senha
-        And the user fill the field empresa
-        And the user fill the field cargo
-        And the user check the conditions check box
-        When the user click on button registar se
-        Then the user must see the page with congratulations message
+    Given the user access the os agilistas website register
+    And the user fill the field full name
+    And the user fill the field email
+    And the user fill the field senha
+    And the user fill the field empresa
+    And the user fill the field cargo
+    And the user check the conditions check box
+    When the user click on button registar se
+    Then the user must see the page with congratulations message
 
 
         
