@@ -24,8 +24,8 @@ ${var_cargo}                                testCargo
 ${title_after_register_front}               Você recebeu uma moeda! Campanha - Os Agilistas
 
 #Configuration variables
-${URL_Login}          https://osagilistas.com/login/
-${URL_Register}       https://osagilistas.com/cadastro/
+${URL_Login}          https://
+${URL_Register}       https://
 ${Browser}      chrome
 
 #Elements on login page
